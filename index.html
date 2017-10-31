@@ -8,10 +8,19 @@
 
 
 <body>
-    <div id="your-files">Drop file here</div>
-    <button onclick="parse()">PARSE</button>
+    <div id="fileDrop">Drop file here</div>
+    <button id="printableButton" onClick="makePrintable()">Printable</button>
+    <button id="parseButton" onclick="parse()">PARSE</button>
     <button id="listRoomsButton" onclick="listRoomsAfterParse()">List Rooms</button>
-    <p id="output">Hello I am p</p>
+    <div id="output">
+        <table id="table" style="width: 100%">
+            <tr>
+                <th id="th1"></th>
+                <th id="th2"></th>
+                <th id="th3"></th>
+            </tr>
+        </table>
+    </div>
 </body>
 <script src="scripts/itemHandler.js"></script>
 <script src="scripts/index.js"></script>

@@ -1,3 +1,4 @@
+var printable = false;
 let itemList;
 var file;
 var config = {
@@ -23,7 +24,7 @@ var config = {
     beforeFirstChunk: undefined,
     withCredentials: undefined
 }
-var target = document.getElementById('your-files');
+var target = document.getElementById('fileDrop');
 
 target.addEventListener("dragover", function(event) {
     event.preventDefault();
@@ -47,7 +48,22 @@ target.addEventListener("drop", function(event) {
 
 }, false);
 
-
+function makePrintable(){
+    var fileDropArea = document.getElementById('fileDrop');
+    var parseButton = document.getElementById('parseButton');
+    var listRoomsButton = document.getElementById('listRoomsButton');
+    if(!printable){
+        fileDropArea.style.visibility = 'hidden';
+        parseButton.style.visibility = 'hidden';
+        listRoomsButton.style.visibility = 'hidden';
+        printable = true;
+    }else{
+        fileDropArea.style.visibility = 'visible';
+        parseButton.style.visibility = 'visible';
+        listRoomsButton.style.visibility = 'visible';
+        printable = false;
+    }
+}
 
 function parse(){
     console.log(file);

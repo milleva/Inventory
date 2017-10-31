@@ -28,7 +28,33 @@ function listRooms(itemList){
 
     }
 
-    var output = '';
+    var table = document.getElementById('table');
+    document.getElementById('th1').innerHTML = 'Room Name';
+    document.getElementById('th2').innerHTML = 'Total Items';
+    document.getElementById('th3').innerHTML = 'Total Worth';
+
+    var rooms = totalPrices.keys();
+    while(true){
+        var roomKey = rooms.next();
+        if(roomKey.value){
+            var tr = document.createElement('tr');
+            var td1 = document.createElement('td');
+            var td2 = document.createElement('td');
+            var td3 = document.createElement('td');
+            td1.appendChild(document.createTextNode(roomKey.value));
+            td2.appendChild(document.createTextNode(itemAmounts.get(roomKey.value)));
+            td3.appendChild(document.createTextNode(totalPrices.get(roomKey.value)));
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            table.appendChild(tr);
+            tr.style.color = 'black';
+        }else{
+            break;
+        }
+    }
+
+    /*var output = '';
 
 
     var rooms = totalPrices.keys();
@@ -42,11 +68,8 @@ function listRooms(itemList){
         }
     }
 
-    /*for(let i = 0; i < itemList.length; i++){
-        item = itemList[i];
-        output += item['Room Name'] + '/n';
-    }*/
-    document.getElementById('output').innerHTML = output;
+
+    document.getElementById('output').innerHTML = output;*/
 }
 
 

@@ -1,5 +1,5 @@
 :root {
-    --main-color: darkgreen;
+    --main-color: darkblue;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
 }
 
 div{
-    color:darkgreen;
+    color:var(--main-color);
     border: solid var(--main-color);
     width: 20%;
     height: 20%;
@@ -37,8 +37,28 @@ button:hover {
     cursor: pointer;
 }
 
+#printableButton{
+    background-color: cornsilk;
+    left: 22%;
+    top: 2%;
+    border: thin solid white;
+}
+
+#printableButton:hover{
+    background-color: black;
+    left: 22%;
+    top: 2%;
+    border: thin solid black
+}
+
 #output{
     position: absolute;
     top: 30%;
     font-size: 1.6vw;
+    border: none;
+    width: 100%;
+}
+
+td{
+    border-bottom: thin solid gray;
 }
