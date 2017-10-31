@@ -53,23 +53,6 @@ function listRooms(itemList){
             break;
         }
     }
-
-    /*var output = '';
-
-
-    var rooms = totalPrices.keys();
-    while(true){
-        var roomKey = rooms.next();
-        if(roomKey.value){
-            output += roomKey.value + returnSpace(40, roomKey.value.length) + totalPrices.get(roomKey.value)+ ',00e' +
-                returnSpace(10, 0)+ itemAmounts.get(roomKey.value) +'<br>';
-        }else{
-            break;
-        }
-    }
-
-
-    document.getElementById('output').innerHTML = output;*/
 }
 
 
