@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
     <title>Inventory</title>
 </head>
-<script src="scripts/index.js"></script>
+<script src="scripts/papaparse.js"></script>
 
 
 <body>
-	<h>Solidness</h>
+    <div id="your-files">Drop file here</div>
+    <button onclick="parse()">PARSE</button>
+    <button id="listRoomsButton" onclick="listRoomsAfterParse()">List Rooms</button>
+    <p id="output">Hello I am p</p>
 </body>
+<script src="scripts/itemHandler.js"></script>
+<script src="scripts/index.js"></script>

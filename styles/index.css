@@ -1,0 +1,44 @@
+:root {
+    --main-color: darkgreen;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+div{
+    color:darkgreen;
+    border: solid var(--main-color);
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    text-align: center;
+}
+
+button {
+    background-color: saddlebrown;
+    border-radius: 1em;
+    color: white;
+    border: thin solid var(--main-color);
+    font-size: 1vw;
+    font-weight: bold;
+    width: 7%;
+    height: 5%;
+    top: 23%;
+    position: absolute;
+}
+
+#listRoomsButton{
+    left: 8%;
+}
+
+button:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+#output{
+    position: absolute;
+    top: 30%;
+    font-size: 1.6vw;
+}
