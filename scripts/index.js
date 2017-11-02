@@ -12,17 +12,18 @@ var config = {
     worker: false,
     comments: false,
     step: undefined,
-    complete: function(results, file) {
-        //console.log("Parsing complete:", results.data.length, file);
-        itemList = results.data;
-    },
     error: undefined,
     download: false,
     skipEmptyLines: false,
     chunk: undefined,
     fastMode: undefined,
     beforeFirstChunk: undefined,
-    withCredentials: undefined
+    withCredentials: undefined,
+    complete: function(results, file) {
+        //console.log("Parsing complete:", results.data.length, file);
+        itemList = results.data;
+        console.log(itemList);  
+    }
 }
 var target = document.getElementById('fileDrop');
 
