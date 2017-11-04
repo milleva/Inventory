@@ -1,0 +1,21 @@
+h1{
+    font-size: 3em;
+}
+
+form {
+}
+
+
+.formInput{
+    font-size: 2em;
+}
+.formText {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#submitButton{
+    border-radius: 1em;
+    height: 3em;
+    width: 6em;
+}

@@ -16,7 +16,8 @@ div{
 }
 
 button {
-    background-color: saddlebrown;
+    font-style: oblique;
+    background-color: var(--main-color);
     border-radius: 1em;
     color: white;
     border: thin solid var(--main-color);
@@ -32,8 +33,12 @@ button {
     left: 8%;
 }
 
+#addItemButton{
+    left: 16%;
+}
+
 button:hover {
-    background-color: brown;
+    background-color: purple;
     cursor: pointer;
 }
 
@@ -45,10 +50,7 @@ button:hover {
 }
 
 #printableButton:hover{
-    background-color: black;
-    left: 22%;
-    top: 2%;
-    border: thin solid black
+    background-color: #910093;
 }
 
 #output{
@@ -62,3 +64,4 @@ button:hover {
 td{
     border-bottom: thin solid gray;
 }
+
